@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; 
+    
+}
+
+nav ul li {
+    display: inline-flex;
+    margin: 0 10px;
+    font-size: 2vb;
+    align-items: center;
+    vertical-align: middle;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    transition: transform 0.1s ease, background 0.3s ease;
+    font-weight: bold;
+    
+}
+nav ul li a:hover {
+    text-decoration: none; 
+    background: linear-gradient(45deg, #ff6b6b, #f7b733);
+    background-clip: text; /* Clip background to text */
+    color: transparent; /* Make text color transparent */
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:active {
+    transform: translateY(-5px); /* Jump effect on click */
+}
+nav ul li a img {
+    margin:0;
+    border-radius: 50%;
+    height: 8vb;
+    width: 8vb;
+}
+nav ul li .fa:hover {
+    background:linear-gradient(45deg, #f7b733, #ff6b6b);
+    background-clip: text;
+    color:transparent;
+    transition: color 0.3s ease-in-out;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; /* Align with other links */
+}
+
+.dropdown > a {
+    padding: 16px;
+    display: inline-block; /* Ensure link height matches */
+    text-decoration: none;
+    margin-top: 3px;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%; /* Ensure it opens below the link */
+    left: 0;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 1;
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.font1 {
+    font-variant:small-caps;
+    font-family: 'comic sans ms';
+    font-weight:bolder;
+    font-style:oblique;
+    text-align: center;
+    font-size: 36px;
+    color: #1abc9c;
+    margin-top: 40px;
+}
+.font2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.info-paragraph {
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 30px; /* Extra padding for spaciousness */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Larger text */
+    line-height: 1.6; /* Increased line height for readability */
+    color: #2c3e50; /* Dark blue text color for contrast */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around the box */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Animation effects */
+}
+.info-paragraph:hover {
+    transform: scale(1.03); /* Slightly increase size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow effect */
+}
+
+#img1 {
+    border-radius: 50px;
+    height: 30%;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border:#000000 5px solid ;
+    
+
+}
+#img2 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#img3 {
+    background-image: url(image3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#img4 {
+   background-image: url(image2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+#img5 {
+    background-image: url(image4.jpg);
+}
+#img6 {
+    background-image: url(image5.jpg);
+    
+}
+#font11{
+    color:white
+}
+main {
+    padding: 20px;
+}
+.bi {
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+.nav {
+    background-color:#004d13;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #004D13;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.gradient-button {
+    background: linear-gradient(45deg, #ff6b6b, #f7b733); /* Gradient colors */
+    border: none; /* Remove default border */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 10px; /* Rounded corners */
+    transition: background 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.gradient-button:hover {
+    background: linear-gradient(45deg, #f7b733, #ff6b6b); /* Reverse gradient on hover */
+    transform: scale(1.05);
+}
+
+.footer{
+    background: #004D13;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:#DADADA;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:#DADADA;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+} 
+
+footer div div .fa {
+    font-size: 30px;
+    padding:15px;
+    text-align: center;
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+  
+  /* Add a hover effect if you want */
+  footer div div .fa:hover {
+    opacity: 0.7;
+  }
+ 
+ 
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  footer div div .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 15px;
+   
+  }
+  footer div div .fa-youtube {
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    
+  }
+  footer div div .fa-instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color:#ffffff;
+    border-radius: 15px;
+  }
+  /* Twitter */
+  footer div div .fa-twitter {
+    background-color: #55ACEE;
+    color: white;
+    border-radius: 15px;
+   
+  }
+  
+  .container {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.team-member {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.team-member:hover {
+    transform: scale(1.05);
+}
+.team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+.team-member h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+.team-member p {
+    font-size: 1rem;
+    color: #666;
+}
+.social-icons a {
+    margin: 5px;
+    text-decoration: none;
+    color: #ff7f50;
+    font-size: 1.5rem;
+}
+.social-icons a:hover {
+    color: #ff4500;
+}
+.body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+}
+.h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+.bold {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.body1 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffcc00, #ff6666);
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+.container1 {
+    padding: 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.button1 {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+.button1:hover {
+    background: #cc0000;
+}
